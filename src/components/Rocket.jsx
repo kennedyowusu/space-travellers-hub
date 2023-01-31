@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
+import { reserveRocket, cancelRocket } from '../redux/rockets/rocketsSlice';
 
 const Rocket = ({
-  rocketName, description, image, id,
+  rocketName, description, image, id, reserved,
 }) => {
   const dispatch = useDispatch();
 
@@ -17,7 +18,6 @@ const Rocket = ({
       }}
     >
       <h1>{rocketName}</h1>
-      <p>{description}</p>
       <img
         src={image}
         alt={rocketName}
@@ -26,23 +26,53 @@ const Rocket = ({
           height: '200px',
           objectFit: 'cover',
         }}
-
       />
-      <button
-        type="button"
-        // onClick={() => dispatch(reserveRocket(id))}
-        onClick={() => dispatch({ type: 'RESERVE_ROCKET', payload: id })}
-        style={{
-          backgroundColor: 'blue',
-          color: 'white',
-          padding: '10px',
-          borderRadius: '5px',
-          border: 'none',
-          cursor: 'pointer',
-        }}
-      >
-        Reserve Rocket
-      </button>
+      <p>
+        {reserved && (
+          <span
+            style={{
+              backgroundColor: 'teal',
+              color: 'white',
+              border: 'none',
+              padding: '10px',
+              borderRadius: '5px',
+            }}
+          >
+            Reserved
+          </span>
+        )}
+        {description}
+      </p>
+
+      {reserved ? (
+        <button
+          type="button"
+          onClick={() => dispatch(cancelRocket(id))}
+          style={{
+            backgroundColor: 'red',
+            color: 'white',
+            border: 'none',
+            padding: '10px',
+            borderRadius: '5px',
+          }}
+        >
+          Cancel Reservation
+        </button>
+      ) : (
+        <button
+          type="button"
+          onClick={() => dispatch(reserveRocket(id))}
+          style={{
+            backgroundColor: 'green',
+            color: 'white',
+            border: 'none',
+            padding: '10px',
+            borderRadius: '5px',
+          }}
+        >
+          Reserve Rocket
+        </button>
+      )}
     </div>
   );
 };
@@ -52,6 +82,7 @@ Rocket.propTypes = {
   description: PropTypes.string,
   image: PropTypes.string,
   id: PropTypes.string,
+  reserved: PropTypes.bool,
 }.isRequired;
 
 export default Rocket;

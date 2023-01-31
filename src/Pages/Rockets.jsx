@@ -22,6 +22,7 @@ const Rockets = () => {
           description={rocket.description}
           image={rocket.images[0]}
           id={rocket.id}
+          reserved={rocket.reserved}
         />
       ))}
     </div>
@@ -29,4 +30,3 @@ const Rockets = () => {
 };
 
 export default Rockets;
-//  onClick={() => dispatch(reserveRocket(id))};
