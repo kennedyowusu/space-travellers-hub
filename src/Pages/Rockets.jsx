@@ -29,4 +29,3 @@ const Rockets = () => {
 };
 
 export default Rockets;
-//  onClick={() => dispatch(reserveRocket(id))};
