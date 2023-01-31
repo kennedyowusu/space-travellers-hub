@@ -15,6 +15,14 @@ const Rocket = ({
         type="button"
         // onClick={() => dispatch(reserveRocket(id))}
         onClick={() => dispatch({ type: 'RESERVE_ROCKET', payload: id })}
+        style={{
+          backgroundColor: 'blue',
+          color: 'white',
+          padding: '10px',
+          borderRadius: '5px',
+          border: 'none',
+          cursor: 'pointer',
+        }}
       >
         Reserve Rocket
       </button>
