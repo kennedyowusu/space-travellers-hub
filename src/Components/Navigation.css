@@ -1,0 +1,24 @@
+.nav-menu {
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.app-logo {
+  width: 15%;
+}
+
+ul li {
+  list-style: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+}
