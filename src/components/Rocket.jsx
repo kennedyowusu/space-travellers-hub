@@ -18,7 +18,16 @@ const Rocket = ({
     >
       <h1>{rocketName}</h1>
       <p>{description}</p>
-      <img src={image} alt={rocketName} />
+      <img
+        src={image}
+        alt={rocketName}
+        style={{
+          width: '200px',
+          height: '200px',
+          objectFit: 'cover',
+        }}
+
+      />
       <button
         type="button"
         // onClick={() => dispatch(reserveRocket(id))}
@@ -41,7 +50,7 @@ const Rocket = ({
 Rocket.propTypes = {
   rocketName: PropTypes.string,
   description: PropTypes.string,
-  image: PropTypes.arrayOf(PropTypes.string),
+  image: PropTypes.string,
   id: PropTypes.string,
 }.isRequired;
 
