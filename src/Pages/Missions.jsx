@@ -1,7 +1,10 @@
 import React from 'react';
+import Missions from '../components/DisplayMissions';
 
-const Misions = () => (
-  <div>This is the missions page</div>
-);
-
-export default Misions;
+export default function Books() {
+  return (
+    <>
+      <Missions />
+    </>
+  );
+}
