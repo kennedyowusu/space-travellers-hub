@@ -6,8 +6,6 @@ const Rockets = () => {
   const dispatch = useDispatch();
   const rocketData = useSelector((state) => state.rockets.rockets);
 
-  rocketData.sort((a, b) => a.rocketName.localeCompare(b.rocketName));
-
   useEffect(() => {
     if (rocketData.length === 0) {
       dispatch(fetchRockets());
