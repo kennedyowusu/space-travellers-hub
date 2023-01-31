@@ -1,5 +1,6 @@
 import React from 'react';
-import PropTypes, { useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
 
 const Rocket = ({
   rocketName, description, image, id,
@@ -7,7 +8,14 @@ const Rocket = ({
   const dispatch = useDispatch();
 
   return (
-    <div>
+    <div
+      style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+      }}
+    >
       <h1>{rocketName}</h1>
       <p>{description}</p>
       <img src={image} alt={rocketName} />

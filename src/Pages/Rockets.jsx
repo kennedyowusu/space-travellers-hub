@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchRockets } from '../redux/rockets/rocketsSlice';
+import Rocket from '../components/Rocket';
 
 const Rockets = () => {
   const dispatch = useDispatch();
@@ -13,22 +14,19 @@ const Rockets = () => {
   }, [dispatch, rocketData]);
 
   return (
-    <div style={{
-      display: 'flex',
-      flexWrap: 'wrap',
-      justifyContent: 'space-around',
-      alignItems: 'center',
-    }}
-    >
+    <div>
       {rocketData.map((rocket) => (
-        <div key={rocket.id}>
-          <h2>{rocket.rocketName}</h2>
-          <p>{rocket.description}</p>
-          <img src={rocket.images[0]} alt={rocket.rocketName} />
-        </div>
+        <Rocket
+          key={rocket.id}
+          rocketName={rocket.rocket_name}
+          description={rocket.description}
+          image={rocket.flickr_images}
+          id={rocket.id}
+        />
       ))}
     </div>
   );
 };
 
 export default Rockets;
+//  onClick={() => dispatch(reserveRocket(id))};
