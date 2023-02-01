@@ -16,15 +16,7 @@ export default function Books() {
 
   return (
     <div>
-      {missionData.map((mission) => (
-        <MissionsTable
-          key={mission.id}
-          missionName={mission.missionName}
-          description={mission.description}
-          id={mission.id}
-          reserved={mission.reserved}
-        />
-      ))}
+      <MissionsTable missions={missionData} />
     </div>
   );
 }
