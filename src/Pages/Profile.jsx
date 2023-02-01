@@ -6,20 +6,15 @@ const Profile = () => {
   const missions = useSelector((state) => state.missions.missions);
 
   const reservedRockets = rockets.filter((rocket) => rocket.reserved);
-  const joinedMissions = missions.filter((mission) => mission.reserved);
+  const reservedMissions = missions.filter((mission) => mission.reserved);
 
   return (
     <div>
       <h1>My Profile</h1>
       <h2>My Missions</h2>
-      {/* <ul>
-        {reservedMissions.map((mission) => (
-          <li key={mission.mission_id}>{mission.mission_name}</li>
-        ))}
-      </ul> */}
       <ul>
-        {joinedMissions.map((mission) => (
-          <li key={mission.mission_id}>{mission.mission_name}</li>
+        {reservedMissions.map((mission) => (
+          <li key={mission.mission_id}>{mission.missionName}</li>
         ))}
       </ul>
       <h2>My Rockets</h2>
