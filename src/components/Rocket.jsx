@@ -9,70 +9,42 @@ const Rocket = ({
   const dispatch = useDispatch();
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'space-around',
-        alignItems: 'center',
-      }}
-    >
-      <h1>{rocketName}</h1>
-      <img
-        src={image}
-        alt={rocketName}
-        style={{
-          width: '200px',
-          height: '200px',
-          objectFit: 'cover',
-        }}
-      />
-      <p>
-        {reserved && (
-          <span
-            style={{
-              backgroundColor: 'teal',
-              color: 'white',
-              border: 'none',
-              padding: '10px',
-              borderRadius: '5px',
-            }}
-          >
-            Reserved
-          </span>
-        )}
-        {description}
-      </p>
+    <div className="rocket">
+      <img src={image} alt={rocketName} className="rocket-image" />
+      <div className="content">
+        <h1 className="rocket-name">{rocketName}</h1>
 
-      {reserved ? (
-        <button
-          type="button"
-          onClick={() => dispatch(cancelRocket(id))}
-          style={{
-            backgroundColor: 'red',
-            color: 'white',
-            border: 'none',
-            padding: '10px',
-            borderRadius: '5px',
-          }}
+        <p
+          className="rocket-description"
         >
-          Cancel Reservation
-        </button>
-      ) : (
-        <button
-          type="button"
-          onClick={() => dispatch(reserveRocket(id))}
-          style={{
-            backgroundColor: 'green',
-            color: 'white',
-            border: 'none',
-            padding: '10px',
-            borderRadius: '5px',
-          }}
-        >
-          Reserve Rocket
-        </button>
-      )}
+          {reserved && (
+            <span
+              className="reserved"
+            >
+              Reserved
+            </span>
+          )}
+          {description}
+        </p>
+
+        {reserved ? (
+          <button
+            type="button"
+            onClick={() => dispatch(cancelRocket(id))}
+            className="cancel"
+          >
+            Cancel Reservation
+          </button>
+        ) : (
+          <button
+            type="button"
+            onClick={() => dispatch(reserveRocket(id))}
+            className="reserve"
+          >
+            Reserve Rocket
+          </button>
+        )}
+      </div>
     </div>
   );
 };
