@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Rockets Component rockets component should match with snapshot 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexWrap": "wrap",
+      "justifyContent": "space-around",
+    }
+  }
+>
+  <h1 />
+  <img
+    style={
+      Object {
+        "height": "200px",
+        "objectFit": "cover",
+        "width": "200px",
+      }
+    }
+  />
+  <p />
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "green",
+        "border": "none",
+        "borderRadius": "5px",
+        "color": "white",
+        "padding": "10px",
+      }
+    }
+    type="button"
+  >
+    Reserve Rocket
+  </button>
+</div>
+`;

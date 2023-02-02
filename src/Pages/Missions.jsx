@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-// import Missions from '../components/DisplayMissions';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchMissions, selectMission } from '../redux/missions/missions';
 import MissionsTable from '../components/Missions';
