@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchMissions, selectMission } from '../redux/missions/missions';
-import MissionsTable from '../components/Missions';
+import MissionsTable from '../components/Mission';
 
 export default function Books() {
   const missionData = useSelector(selectMission);
