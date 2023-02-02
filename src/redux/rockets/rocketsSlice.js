@@ -1,10 +1,10 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import axios from 'axios';
+import axiosInstance from '../../utils/axiosInstance';
 
 export const fetchRockets = createAsyncThunk(
   'rockets/fetchRockets',
   async () => {
-    const response = await axios.get('https://api.spacexdata.com/v3/rockets');
+    const response = await axiosInstance.get('/rockets');
     if (response.status !== 200) {
       throw new Error('Failed to fetch rockets');
     }
