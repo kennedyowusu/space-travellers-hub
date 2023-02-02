@@ -26,6 +26,12 @@ exports[`Test Navigation Component navigation component should match with snapsh
           className="active"
           href="/"
           onClick={[Function]}
+          style={
+            Object {
+              "color": "blue",
+              "textDecoration": "underline",
+            }
+          }
         >
           Rockets
         </a>
@@ -35,6 +41,12 @@ exports[`Test Navigation Component navigation component should match with snapsh
           className=""
           href="/missions"
           onClick={[Function]}
+          style={
+            Object {
+              "color": "blue",
+              "textDecoration": "none",
+            }
+          }
         >
           Missions
         </a>
@@ -44,6 +56,12 @@ exports[`Test Navigation Component navigation component should match with snapsh
           className=""
           href="/profile"
           onClick={[Function]}
+          style={
+            Object {
+              "color": "blue",
+              "textDecoration": "none",
+            }
+          }
         >
           My Profile
         </a>
