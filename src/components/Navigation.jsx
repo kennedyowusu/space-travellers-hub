@@ -16,43 +16,47 @@ export default function Navigation() {
 
   return (
     <nav className="nav-menu">
-      <div className="logo-title">
+      <div className="brand">
         <img src={planet} alt="planet-logo" className="app-logo" />
-        <h1>Space Travelers Hub</h1>
+        <h1 className="logo-title">Space Travelers Hub</h1>
       </div>
       <div>
         <ul className="nav-links">
-          <li>
+          <li className="nav-link">
             <NavLink
               to="/"
-              style={({ isActive }) => (isActive ? activeState : {
-                ...notActiveState,
-              })}
+              style={({ isActive }) => (isActive
+                ? activeState
+                : {
+                  ...notActiveState,
+                })}
             >
               Rockets
-
             </NavLink>
           </li>
-          <li>
+          <li className="nav-link">
             <NavLink
               to="/missions"
-              style={({ isActive }) => (isActive ? activeState : {
-                ...notActiveState,
-              })}
+              style={({ isActive }) => (isActive
+                ? activeState
+                : {
+                  ...notActiveState,
+                })}
             >
               Missions
-
             </NavLink>
           </li>
-          <li>
+          <div className="nav-pipe">|</div>
+          <li className="nav-link">
             <NavLink
               to="/profile"
-              style={({ isActive }) => (isActive ? activeState : {
-                ...notActiveState,
-              })}
+              style={({ isActive }) => (isActive
+                ? activeState
+                : {
+                  ...notActiveState,
+                })}
             >
               My Profile
-
             </NavLink>
           </li>
         </ul>
