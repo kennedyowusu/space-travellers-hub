@@ -10,22 +10,25 @@ const Profile = () => {
   const reservedMissions = missions.filter((mission) => mission.reserved);
 
   return (
-    <div>
-      <h1>My Profile</h1>
-      <div className="profile">
+    <div className="profile-container">
+      <div className="profile-page">
         <div className="join">
-          <h2>My Missions</h2>
-          <ul>
+          <h2 className="mission-title">My Missions</h2>
+          <ul className="mission-list">
             {reservedMissions.map((mission) => (
-              <li key={mission.mission_id}>{mission.missionName}</li>
+              <li className="list-items" key={mission.mission_id}>
+                {mission.missionName}
+              </li>
             ))}
           </ul>
         </div>
-        <div className="reserve">
-          <h2>My Rockets</h2>
-          <ul>
+        <div className="join">
+          <h2 className="rocket-title">My Rockets</h2>
+          <ul className="rocket-list">
             {reservedRockets.map((rocket) => (
-              <li key={rocket.id}>{rocket.rocketName}</li>
+              <li className="list-items" key={rocket.id}>
+                {rocket.rocketName}
+              </li>
             ))}
           </ul>
         </div>

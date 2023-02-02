@@ -4,10 +4,6 @@
   margin: 0;
 }
 
-body {
-  margin: 0;
-}
-
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -114,3 +110,64 @@ body {
   color: #fff;
 }
 
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.profile-page {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  padding: 10px;
+}
+
+.join {
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.rocket-join {
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.mission-title {
+  font-size: 1rem;
+  color: #121212;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.rocket-title {
+  font-size: 1rem;
+  color: #121212;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.mission-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.rocket-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 0.1px solid darkgray;
+  font-weight: normal;
+  font-size: 1rem;
+}
