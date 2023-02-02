@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Navigation Component navigation component should match with snapshot 1`] = `
+<nav
+  className="nav-menu"
+>
+  <div
+    className="logo-title"
+  >
+    <img
+      alt="planet-logo"
+      className="app-logo"
+      src="planet.png"
+    />
+    <h1>
+      Space Travelers Hub
+    </h1>
+  </div>
+  <div>
+    <ul
+      className="nav-links"
+    >
+      <li>
+        <a
+          aria-current="page"
+          className="active"
+          href="/"
+          onClick={[Function]}
+        >
+          Rockets
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          href="/missions"
+          onClick={[Function]}
+        >
+          Missions
+        </a>
+      </li>
+      <li>
+        <a
+          className=""
+          href="/profile"
+          onClick={[Function]}
+        >
+          My Profile
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+`;

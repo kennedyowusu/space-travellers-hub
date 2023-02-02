@@ -8,7 +8,7 @@ export default function Navigation() {
     <nav className="nav-menu">
       <div className="logo-title">
         <img src={planet} alt="planet-logo" className="app-logo" />
-        <h1>Space Travelers&apos; Hub</h1>
+        <h1>Space Travelers Hub</h1>
       </div>
       <div>
         <ul className="nav-links">
