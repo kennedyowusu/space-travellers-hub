@@ -69,11 +69,11 @@ Clone this repository to your desired folder:
 
 ## 👥 Authors <a name="authors">Houda MZARI</a>
 
-- -👤 **Kennedy Owusu**
+- -👤 **Emmanuella Adu**
 
-- -- GitHub: [@kennedyowusu](https://github.com/kennedyowusu)
-  -- LinkedIn: [@kennedyowusu](https://www.linkedin.com/in/kennedy-owusu/)
-  -- Twitter [@_iamkobby](https://twitter.com/_iamkobby)
+- -- GitHub: [@elarhadu](https://github.com/elarhadu)
+  -- LinkedIn: [@emmanuella-adu](https://www.linkedin.com/in/emmanuella-adu/)
+  -- Twitter [@elarh_](https://twitter.com/elarh_)
 
 - -👤 **Kennedy Owusu**
 
