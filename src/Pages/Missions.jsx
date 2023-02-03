@@ -14,7 +14,7 @@ export default function Books() {
   }, [dispatch, missionData]);
 
   return (
-    <div>
+    <div className="mission-container">
       <MissionsTable missions={missionData} />
     </div>
   );

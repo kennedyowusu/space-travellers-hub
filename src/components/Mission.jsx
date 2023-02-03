@@ -16,7 +16,7 @@ const MissionsTable = ({ missions }) => {
     && missions.length > 0
   ) {
     missionData = (
-      <Table striped bordered hover>
+      <Table striped bordered>
         <thead>
           <tr>
             <th>Mission</th>
@@ -32,17 +32,16 @@ const MissionsTable = ({ missions }) => {
             reserved,
           }) => (
             <tr key={id}>
-              <td>{id}</td>
               <td>{missionName}</td>
               <td>{description}</td>
-              <td>
+              <td className="col-md-1 text-center" style={{ verticalAlign: 'middle' }}>
                 {reserved ? (
-                  <Badge variant="primary">Active Member</Badge>
+                  <Badge bg="info">Active Member</Badge>
                 ) : (
-                  <Badge variant="secondary">NOT A MEMBER</Badge>
+                  <Badge bg="secondary">NOT A MEMBER</Badge>
                 )}
               </td>
-              <td>
+              <td className="col-lg-2 text-center" style={{ verticalAlign: 'middle' }}>
                 {reserved ? (
                   <Button variant="outline-danger" onClick={() => dispatch(leaveMission(id))}>
                     Leave Mission
@@ -58,7 +57,6 @@ const MissionsTable = ({ missions }) => {
                   </Button>
                 )}
               </td>
-              <td />
             </tr>
           ))}
         </tbody>

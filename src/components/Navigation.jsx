@@ -1,24 +1,23 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import planet from '../assets/images/planet.png';
-import '../styles/navigation.css';
 
 export default function Navigation() {
   const activeState = {
     textDecoration: 'underline',
-    color: 'blue',
+    color: '#52a3ff',
   };
 
   const notActiveState = {
     textDecoration: 'none',
-    color: 'blue',
+    color: '#52a3ff',
   };
 
   return (
     <nav className="nav-menu">
       <div className="brand">
         <img src={planet} alt="planet-logo" className="app-logo" />
-        <h1 className="logo-title">Space Travelers Hub</h1>
+        <h1 className="logo-title">Space Travelers&apos; Hub</h1>
       </div>
       <div>
         <ul className="nav-links">
