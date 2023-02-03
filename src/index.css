@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #121212;
+  margin-left: 10px;
+}
+
+.app-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #52a3ff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.nav-pipe {
+  margin: 0 3px;
+  color: rgb(128, 128, 128, 0.8);
+}
+
+.rocket {
+  width: 100%;
+  animation: rocket 2s linear infinite;
+  display: flex;
+  padding: 20px;
+  border: 1px solid darkgray;
+}
+
+.rocket-image {
+  width: 18%;
+  height: 20%;
+  object-fit: contain;
+}
+
+.content {
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+
+.rocket-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.reserved {
+  font-size: 1rem;
+  color: #fff;
+  padding: 5px;
+  margin: 5px;
+  background-color: #18a2b8;
+  border-radius: 5px;
+}
+
+.rocket-description {
+  font-size: 1rem;
+  color: black;
+}
+
+.cancel,
+.reserve {
+  font-size: 1rem;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel {
+  border: 1px solid gray;
+  color: gray;
+}
+
+.reserve {
+  background-color: #52a3ff;
+  border: 1px solid #52a3ff;
+  color: #fff;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.mission-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-page {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  padding: 10px;
+}
+
+.join {
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.rocket-join {
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.mission-title {
+  font-size: 1rem;
+  color: #121212;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.rocket-title {
+  font-size: 1rem;
+  color: #121212;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.mission-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.rocket-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 0.1px solid darkgray;
+  font-weight: normal;
+  font-size: 1rem;
+}
